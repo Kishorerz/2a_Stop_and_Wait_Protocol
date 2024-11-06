@@ -1,8 +1,9 @@
 # 2a_Stop_and_Wait_Protocol
-### Name : Kishor Kumar B
-### Reg NO : 212223240072
-### Date :
+# Name: Kishor Kumar B
+# Reg. No: 212223240072
+# Date :
 ## AIM 
+
 To write a python program to perform stop and wait protocol
 ## ALGORITHM
 1. Start the program.
@@ -12,8 +13,9 @@ To write a python program to perform stop and wait protocol
 5. If your frames reach the server it will send ACK signal to client
 6. Stop the Program
 ## PROGRAM
-### Client:
-```py
+
+# Client:
+~~~python
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -29,18 +31,19 @@ while True:
    else:
        c.close()
        break
-```
-### server :
-```py
+~~~
+
+# Server:
+
+~~~python
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True:
     print(s.recv(1024).decode())
     s.send("Acknowledgement Recived".encode())
-```
+~~~
 ## OUTPUT
-### Client and Server Output:
-![alt text](<Screenshot 2024-10-16 122855.png>)
+![alt text](<PROGRAM & OUTPUT/Output.png>)
 ## RESULT
 Thus, python program to perform stop and wait protocol was successfully executed.
